@@ -1,10 +1,13 @@
 from flask import Flask
+from boto.s3.connection import S3Connection
+
 
 app = Flask(__name__)
 
 @app.route('/')
 def homepage():
-    return "<h1>Hello heroku test commit </h1>"
+    username = s3 = S3Connection(os.environ['DB_USER'])
+    return "<h1>Hello heroku test commit " + username +  "</h1>"
     
 
 if __name__ == '__main__':
