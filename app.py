@@ -3,13 +3,14 @@ import sys
 from flask import Flask, render_template, request
 from pymongo import MongoClient
 from werkzeug.utils import secure_filename
+import instructions
 
 UPLOAD_FOLDER = '.\images'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
 app = Flask(__name__)
 
-
+rec = instructions.recipe()
 
 def dbconnect():
 

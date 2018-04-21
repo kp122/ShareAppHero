@@ -47,3 +47,4 @@ Temporary Items
 .apdisk
 images/logo.png
 templates/result.html
+__pycache__/instructions.cpython-36.pyc
