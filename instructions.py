@@ -5,19 +5,17 @@ class instruction:
         self.vidlink =""
 
 class _instructions:
-    def __init__(self):
+    def __init__(self,name,image,summaryvidlink):
         print("Base constructed")
-        self.name ="Pasta"
+        self.name =""
         self.image = ""
         self.instructionList = []
         self.tags = []
-        self.summaryvidlink="";
-        
-        
-        
+        self.summaryvidlink=""
+     
 class recipe(_instructions):
     def __init__(self):
-        super(recipe,self).__init__()
+        super(recipe,self).__init__("","","")
         print("Child sonstructed")
         self.prep_time=""
         self.number_of_servings=""
